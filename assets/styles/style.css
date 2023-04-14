@@ -8,8 +8,9 @@ header{
     justify-content:space-between;
     margin: 20px;
 }
-body{
-    background-color: blueviolet;
+
+.body{
+    background-color: var(--bs-blue);
 }
 
 
@@ -17,14 +18,13 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 24px;
     padding: 3px;
 }

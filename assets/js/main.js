@@ -5,6 +5,8 @@ let ford = document.querySelector('.marcas__ford')
 let audi = document.querySelector('.marcas__audi')
 let chevrolet = document.querySelector('.marcas__chevrolet') 
 let resultado = document.querySelector('.resultado')
+let btn = document.querySelector(".btn")
+
 
 /* document.addEventListener('DOMContentLoaded',()=>{
     segurosCarrito=JSON.parse(localStorage.getItem('carrito'))||[];
@@ -25,8 +27,13 @@ ford.addEventListener('click', () =>{
         renderArray(data , marca)
     })
     .catch((error)=>{
-        //Colocar un sweet alert
-        alert("Ocurrio una catastrofe " ,error)
+        Swal.fire({
+            title: 'Catastrofe',
+            text:'Ha ocurrido un error',
+            icon:'error',
+            confirmButtonText:'OK',
+        })
+        console.log(error)
     })
 
 })
@@ -43,8 +50,13 @@ audi.addEventListener('click', () =>{
         renderArray(data , marca)
     })
     .catch((error)=>{
-        //Colocar un sweet alert
-        alert("Ocurrio una catastrofe " ,error)
+        Swal.fire({
+            title: 'Catastrofe',
+            text:'Ha ocurrido un error',
+            icon:'error',
+            confirmButtonText:'OK',
+        })
+        console.log(error)
     })
 })
 
@@ -60,8 +72,13 @@ chevrolet.addEventListener('click', () =>{
         renderArray(data , marca)
     })
     .catch((error)=>{
-        //Colocar un sweet alert
-        alert("Ocurrio una catastrofe " ,error)
+        Swal.fire({
+            title: 'Catastrofe',
+            text:'Ha ocurrido un error',
+            icon:'error',
+            confirmButtonText:'OK',
+        })
+        console.log(error)
     })
 
 })
@@ -74,15 +91,42 @@ function renderArray(autos , marca){
 
     busqueda.forEach(({modelo,img,valor})=>{
         html +=`
-        <div class="card">
-            <h3>${modelo}</h3>
-            <img src="${img}" width=150px>
-            <p>valor ${valor}</p>
+        <div class="card" style="width: 18rem;">
+            <img src="${img}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${modelo}</h5>
+                <p class="card-text">${valor}</p>
+                <a href="#" class="btn btn-primary">Seleccionar</a>
+            </div>
+        </div>
         `
+
+        btn.addEventListener('click',()=>{
+            Swal.fire({
+                title:'modelo',
+                text:'valor',
+                imageUrl:'img',
+                imageWidth:400,
+                imageHeight: 200,
+            })
+        })
+
     })
 
     contenido.innerHTML=html
+    
 }
+
+/* btn.addEventListener('click',()=>{
+    Swal.fire({
+        title:'',
+        text:'',
+        imgURL:'',
+        imageWidth:400,
+        imageHeight: 200,
+    })
+}) */
+
 
 
 /* function agregarSeguro(evt){
