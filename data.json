@@ -1,0 +1,43 @@
+[
+    {
+        "marca": "Ford",
+        "modelo": "Focus",
+        "img": "assets/img/focus.webp",
+        "valor": 600000
+    },
+
+    {
+        "marca": "Audi",
+        "modelo": "A3",
+        "img":"assets/img/A3.jpg",
+        "valor": 850000
+    },
+    
+    {
+        "marca": "Audi",
+        "modelo": "A4",
+        "img":"assets/img/A4.webp",
+        "valor":980000
+    },
+
+    {
+        "marca": "Ford",
+        "modelo": "Fiesta",
+        "img": "assets/img/fiesta.png",
+        "valor":350000
+    },
+
+    {
+        "marca": "Chevrolet",
+        "modelo": "Captiva",
+        "img": "assets/img/captiva.avif",
+        "valor":830000
+    },
+
+    {
+        "marca": "Chevrolet",
+        "modelo": "Aveo",
+        "img":"assets/img/aveo.avif",
+        "valor":280000
+    }
+]
