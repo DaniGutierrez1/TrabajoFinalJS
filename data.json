@@ -39,5 +39,37 @@
         "modelo": "Aveo",
         "img":"assets/img/aveo.avif",
         "valor":280000
+    },
+
+    {
+        "marca": "Fiat",
+        "modelo": "Toro",
+        "img":"assets/img/toro.png",
+        "valor":980000
+
+    },
+
+    {
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "img":"assets/img/palio.png",
+        "valor":230000
+
+    },
+
+    {
+        "marca": "BMW",
+        "modelo": "i3",
+        "img":"assets/img/i3.webp",
+        "valor":1250000
+
+    },
+
+    {
+        "marca": "BMW",
+        "modelo": "M3",
+        "img":"assets/img/m3.webp",
+        "valor":2300000
+
     }
 ]
